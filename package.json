@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "tsc",
+    "clean": "find src -type f -name '*.js' -exec rm {} \\+",
     "format": "prettier --write '{*.js,src/**/*.ts}'",
     "start": "node src/index.js"
   },
@@ -27,6 +28,7 @@
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "@types/hapi__hapi": "^18.2.1",
+    "@types/hapi__vision": "^5.5.0",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
@@ -34,6 +36,7 @@
   },
   "dependencies": {
     "@hapi/hapi": "^18.3.1",
+    "@hapi/vision": "^5.5.2",
     "hard-rejection": "^2.1.0"
   }
 }
