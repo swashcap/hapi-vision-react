@@ -3,15 +3,20 @@ import 'hard-rejection/register'
 import hapi from '@hapi/hapi'
 import vision from '@hapi/vision'
 
-const init = async () => {
+export const getServer = async () => {
   const server = new hapi.Server({
     port: 3000
   })
 
   await server.register(vision)
-  await server.start()
 
-  console.log(`Server running on ${server.info.uri}`)
+  return server
 }
 
-init()
+if (require.main === module) {
+  ;(async () => {
+    const server = await getServer()
+    await server.start()
+    console.log(`Server running on ${server.info.uri}`)
+  })()
+}
