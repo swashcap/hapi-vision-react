@@ -4,7 +4,7 @@
   "description": "Experimenting with Vision template rendering and React",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write '{*.js,src/**/*.ts}'"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,7 @@
     "@commitlint/config-conventional": "^7.5.0",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
-    "prettier": "^1.17.0"
-  },
-  "scripts": {
-    "format": "prettier --write '{*.js,src/**/*.ts}'"
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5"
   }
 }
