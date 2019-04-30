@@ -29,6 +29,9 @@
     "@commitlint/config-conventional": "^7.5.0",
     "@types/hapi__hapi": "^18.2.1",
     "@types/hapi__vision": "^5.5.0",
+    "@types/multistream": "^2.1.1",
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.8.4",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
@@ -37,6 +40,10 @@
   "dependencies": {
     "@hapi/hapi": "^18.3.1",
     "@hapi/vision": "^5.5.2",
-    "hard-rejection": "^2.1.0"
+    "hard-rejection": "^2.1.0",
+    "into-stream": "^5.1.0",
+    "multistream": "^2.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
