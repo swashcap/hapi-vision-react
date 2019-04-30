@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/swashcap/hapi-vision-react/issues"
   },
-  "homepage": "https://github.com/swashcap/hapi-vision-react#readme"
+  "homepage": "https://github.com/swashcap/hapi-vision-react#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "husky": "^2.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0"
+  },
+  "scripts": {
+    "format": "prettier --write '{*.js,src/**/*.ts}'"
+  }
 }
